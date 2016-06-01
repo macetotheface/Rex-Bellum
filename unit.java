@@ -17,8 +17,6 @@ private int currentRange; //the current number of range for the unit
 
 private double flankMod; //the flank modifier for the unit
 private int moveMod; //the sum of the buffs and debuffs of the unit moves
-private int attackMod;//the sum of the buffs and debuffs of the units atttack
-private int rangeMod;//the sum of the buffs and debuffs of the units range 
 
 private int combatants; //number of in the flank
 
@@ -178,35 +176,6 @@ public int getMoveMod() {
 public void setMoveMod(int moveMod) {
 	this.moveMod = moveMod;
 }
-
-/**
- * @return the attackMod
- */
-public int getAttackMod() {
-	return attackMod;
-}
-
-/**
- * @param attackMod the attackMod to set
- */
-public void setAttackMod(int attackMod) {
-	this.attackMod = attackMod;
-}
-
-/**
- * @return the rangeMod
- */
-public int getRangeMod() {
-	return rangeMod;
-}
-
-/**
- * @param rangeMod the rangeMod to set
- */
-public void setRangeMod(int rangeMod) {
-	this.rangeMod = rangeMod;
-}
-
 /**
  * @return the inCombat
  */
