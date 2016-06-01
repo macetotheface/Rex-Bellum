@@ -20,9 +20,9 @@ private int moveMod; //the sum of the buffs and debuffs of the unit moves
 private int attackMod;//the sum of the buffs and debuffs of the units atttack
 private int rangeMod;//the sum of the buffs and debuffs of the units range 
 
-private boolean inCombat; //determines if the unit is adjacent to another enemy
 private int combatants; //number of in the flank
 
+private image unitArt;
 
 
 /**
