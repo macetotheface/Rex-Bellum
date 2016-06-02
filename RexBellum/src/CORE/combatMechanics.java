@@ -1,4 +1,4 @@
-package rexBellum;
+package CORE;
 
 public class combatMechanics {
 

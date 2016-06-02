@@ -1,3 +1,6 @@
+package CORE;
+
+import java.awt.Image;
 
 public class unit {
 
@@ -20,7 +23,7 @@ private int moveMod; //the sum of the buffs and debuffs of the unit moves
 
 private int combatants; //number of in the flank
 
-private image unitArt;
+private Image unitArt;  
 
 
 /**
@@ -179,16 +182,7 @@ public void setMoveMod(int moveMod) {
 /**
  * @return the inCombat
  */
-public boolean isInCombat() {
-	return inCombat;
-}
 
-/**
- * @param inCombat the inCombat to set
- */
-public void setInCombat(boolean inCombat) {
-	this.inCombat = inCombat;
-}
 
 /**
  * @return the factionType

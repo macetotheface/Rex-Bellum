@@ -1,3 +1,4 @@
+package CORE;
 //unfinished
 public class archer extends unit {
 public archer(int faction){

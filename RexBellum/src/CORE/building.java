@@ -1,3 +1,4 @@
+package CORE;
 
 public class building {
 private int goldPerTurn;

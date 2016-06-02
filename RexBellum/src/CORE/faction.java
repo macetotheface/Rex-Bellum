@@ -1,3 +1,4 @@
+package CORE;
 
 public class faction {
 private int manpower;
