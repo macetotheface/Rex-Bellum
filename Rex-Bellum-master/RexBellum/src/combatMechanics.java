@@ -1,5 +1,3 @@
-package rexBellum;
-
 public class combatMechanics {
 
 	private unit attacker;			//The unit that attacks
@@ -24,14 +22,23 @@ public class combatMechanics {
 		this.atkGround = atkGroundTerrain;
 		archerAttack();
 	}
-	
+	//When a melee unit attacks 
 	private void meleeAttack(){
-		this.attacker.setCurrentHealth(defender.getCurrentAttack() * defGround.getDefenderMod());
-		this.defender.setCurrentHealth(attacker.getCurrentAttack() * attacker.getFlankMod());
+		this.attacker.setCurrentHealth((int) ((int) defender.getCurrentAttack() * defGround.getDefenderMod()));
+		this.defender.setCurrentHealth((int) (attacker.getCurrentAttack() * attacker.getFlankMod()));
+		if (this.getAttacker().getCurrentHealth() <= 0){
+			
+		}
+		else if (this.getDefender().getCurrentHealth() <= 0){
+			
+		}
 	}
 
 	private void archerAttack(){
-		this.defender.setCurrentHealth(attacker.getCurrentAttack() * atkGround.getArcherMod() * 4);
+		this.defender.setCurrentHealth((int) ((int)attacker.getCurrentAttack() * atkGround.getArcherMod() * 4));
+		if (this.getDefender().getCurrentHealth() <= 0){
+			
+		}
 	}
 	
 	public unit getAttacker() {
