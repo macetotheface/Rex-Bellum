@@ -60,34 +60,6 @@ public class terrain {
 	}
 
 	/**
-	 * @return the bonusFarm
-	 */
-	public int getBonusFarm() {
-		return bonusFarm;
-	}
-
-	/**
-	 * @param bonusFarm the bonusFarm to set
-	 */
-	public void setBonusFarm(int bonusFarm) {
-		this.bonusFarm = bonusFarm;
-	}
-
-	/**
-	 * @return the bonusBarracks
-	 */
-	public int getBonusBarracks() {
-		return bonusBarracks;
-	}
-
-	/**
-	 * @param bonusBarracks the bonusBarracks to set
-	 */
-	public void setBonusBarracks(int bonusBarracks) {
-		this.bonusBarracks = bonusBarracks;
-	}
-
-	/**
 	 * @return the terrainType
 	 */
 	public int getTerrainType() {
