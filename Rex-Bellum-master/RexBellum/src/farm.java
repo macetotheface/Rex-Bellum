@@ -2,9 +2,8 @@
 public class farm extends building{
 
 	farm(){
-		this.setMenPerTurn(30);
-		this.setGoldPerTurn(3);
+		this.setMenPerTurn(20);
+		this.setGoldPerTurn(2);
 		this.setPrice(50);
-		this.setUseManpower(true);
 	}
 }

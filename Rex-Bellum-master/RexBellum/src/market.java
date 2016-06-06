@@ -4,6 +4,5 @@ public class market extends building{
 		this.setGoldPerTurn(4);
 		this.setMenPerTurn(0);
 		this.setPrice(50);
-		this.setUseManpower(false);
 	}
 }

@@ -4,6 +4,8 @@ public class terrain {
 	private double defenderMod;
 	private double archerMod;
 	private int bonusMarket;
+	private int bonusFarm;
+	private int bonusBarracks;
 	private boolean passable;
 	
 	terrain(int type){
@@ -15,20 +17,26 @@ public class terrain {
 				this.archerMod = 1;
 				this.passable = true;
 				this.bonusMarket = 0;
+				this.bonusFarm = 2;
+				this.bonusBarracks = 0;
 				break;
 			case 2:
 				//hills
-				this.defenderMod = 1.5;
+				this.defenderMod = 2;
 				this.archerMod = 1.5;
 				this.passable = true;
 				this.bonusMarket = 0;
+				this.bonusFarm = 0;
+				this.bonusBarracks = 0;
 				break;
 			case 3:
 				//mountains
-				this.defenderMod = 3;
+				this.defenderMod = 5;
 				this.archerMod = 2;
 				this.passable = false;
 				this.bonusMarket = 0;
+				this.bonusFarm = 0;
+				this.bonusBarracks = 0;
 				break;
 			case 4:
 				//forests
@@ -36,6 +44,8 @@ public class terrain {
 				this.archerMod = 0.75;
 				this.passable = true;
 				this.bonusMarket = 0;
+				this.bonusBarracks = 2;
+				this.bonusFarm = 0;
 				break;
 			case 5:
 				//rivers
@@ -43,8 +53,38 @@ public class terrain {
 				this.archerMod = 1;
 				this.passable = true;
 				this.bonusMarket = 2;
+				this.bonusFarm = 0;
+				this.bonusBarracks = 0;
 				break;
 		}
+	}
+
+	/**
+	 * @return the bonusFarm
+	 */
+	public int getBonusFarm() {
+		return bonusFarm;
+	}
+
+	/**
+	 * @param bonusFarm the bonusFarm to set
+	 */
+	public void setBonusFarm(int bonusFarm) {
+		this.bonusFarm = bonusFarm;
+	}
+
+	/**
+	 * @return the bonusBarracks
+	 */
+	public int getBonusBarracks() {
+		return bonusBarracks;
+	}
+
+	/**
+	 * @param bonusBarracks the bonusBarracks to set
+	 */
+	public void setBonusBarracks(int bonusBarracks) {
+		this.bonusBarracks = bonusBarracks;
 	}
 
 	/**
